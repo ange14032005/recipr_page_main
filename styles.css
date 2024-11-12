@@ -30,7 +30,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--Rose-50);
+    background: hsl(30, 54%, 90%);
     line-height: 27px;
     overflow-x:hidden;
 }
