@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Young Serif";
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+    font-weight: 400;
+}
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+*{
+    font-family: "Outfit";
+    color: var(--Stone-600);
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--Rose-50);
+    line-height: 1.5;
+    overflow-x:hidden;
+}
+.container{
+    background-color: white;
+    padding: 25px;
+    max-width: 650px;
+    border: none;
+    border-radius: 10px;
+    /*margin-bottom: 50px; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    border: 1px solid var(--Stone-150);
+}
+p{
+    font-size: 16px;
+}
+h1{
+    color: var(--Stone-900);
+}
+h1,h2,h3{
+    font-family: "Young Serif";
+}
+h4{
+    color: var(--Rose-800);
+}
+h2{
+    color: var(--Brown-800);
+}
+img{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+#time{
+    background: var(--Rose-50);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+ol li::marker {
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+ul li::marker {
+    color: var(--Brown-800);
+}
+li span{
+    font-weight: bold;
+}
+ul li, ol li {
+    padding-left: 10px;
+    margin-bottom: 10px; 
+    text-indent: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td:nth-child(2) {
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+
+table tr td {
+    border-bottom: 1px solid var(--Stone-150);
+    padding: 20px;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+@media (max-width:375px){
+    body{
+        height: 100%;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        margin: 20px;
+    }
+}
+
+footer{
+    margin-top: 20px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
